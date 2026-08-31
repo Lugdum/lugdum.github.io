@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cortiv - Service temporairement indisponible</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #0f1115;
+    color: #e8e8e8;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  .card {
+    max-width: 640px;
+    width: 100%;
+    background: #1a1d24;
+    border: 1px solid #2a2e38;
+    border-radius: 12px;
+    padding: 32px;
+  }
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #3a1f1f;
+    color: #ff6b6b;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ff6b6b;
+    animation: pulse 1.5s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  h1 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #fff;
+  }
+  p {
+    color: #b8bcc4;
+    margin-bottom: 16px;
+    font-size: 15px;
+  }
+  .meta {
+    font-size: 13px;
+    color: #7a7f8a;
+    margin-bottom: 24px;
+  }
+  .notice {
+    background: #1f2a1f;
+    border: 1px solid #2d4a2d;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-top: 24px;
+  }
+  .notice h2 {
+    font-size: 15px;
+    color: #7ee787;
+    margin-bottom: 10px;
+  }
+  .notice p {
+    color: #c9d1d9;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  code {
+    background: #2a2e38;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #ffa657;
+  }
+  .footer {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #5a5f6a;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="status-badge"><span class="dot"></span>SERVICE INDISPONIBLE</div>
+
+    <h1>⚡ Coupure d'électricité en cours</h1>
+    <p>
+      Plus d'électricité dans toute ma rue depuis le <strong>30/08 à 15h38</strong>.
+      Enedis est sur le coup, mais aucune idée de quand ça reviendra.
+    </p>
+    <p>
+      Tous mes services (Jellyfin, etc.) sont donc hors ligne le temps que le courant revienne.
+      Merci de votre patience 🙏
+    </p>
+    <p class="meta">Dernière mise à jour : voir la date de cette page.</p>
+
+    <div class="notice">
+      <h2>📢 Info importante — changement d'adresse à venir</h2>
+      <p>
+        Les sites en <code>cortiv.top</code> ne fonctionneront plus dans quelques mois.
+        Il suffira de remplacer <code>cortiv.top</code> par <code>cortiv.fr</code> à la fin de l'URL.
+      </p>
+      <p>
+        Pensez à changer le paramètre de vos applications et favoris internet dès maintenant.
+        Vos comptes seront les mêmes partout, aucune inquiétude à avoir de ce côté.
+      </p>
+    </div>
+
+    <div class="footer">cortiv.fr / cortiv.top — page de statut</div>
+  </div>
+</body>
+</html>
